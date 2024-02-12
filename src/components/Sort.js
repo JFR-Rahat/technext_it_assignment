@@ -29,8 +29,8 @@ export const Sort = (users, sortCategory, setSortCategory) => {
             };
 
             sortArray(sortCategory);
-            return { data, setSortCategory };
         }
         )
-    }, [users, sortCategory, data, setSortCategory]);
+    }, [users, sortCategory]);
+    return { data, setSortCategory };
 }
