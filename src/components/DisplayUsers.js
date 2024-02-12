@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 const DisplayUsers = ({filteredUsers}) =>{
     return (
         <>
-        {filteredUsers.map((item, index) => (
+        {filteredUsers && filteredUsers.map((item, index) => (
             <div className="card col-lg-4 col-md-6 col-xs-12 g-4 shadow-lg p-3" key={index}>
                 <img src={item.image} className="card-img-top" alt={item?.firstName} style={{ height: '30vh', objectFit: 'contain' }} />
                 <div className="card-body">
